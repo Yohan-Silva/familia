@@ -1,0 +1,136 @@
+body {
+    margin: 0;
+    padding: 0;
+    color: rgb(12, 4, 8);
+    font-family: sans-serif;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+h1,
+h2,
+h3 {
+    font-weight: 900;
+    color: rgb(41, 27, 27);
+    text-align: center;
+
+}
+
+.wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main {
+    display: block;
+    background-color: rgb(61, 85, 85);
+}
+
+.container {
+    width: 100%;
+    max-width: 760px;
+    margin: 0, auto;
+    padding: 0 20px;
+}
+
+section.module p {
+    margin-bottom: 40px;
+}
+
+section.module:last-child {
+    margin-bottom: 0;
+}
+
+section.module h2 {
+    margin-bottom: 40px;
+    font-size: 30px;
+}
+
+section.module.content {
+    padding: 40px 0;
+    background-color: rgb(1, 179, 211);
+}
+
+section.module.parallax {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -moz-background-size: cover;
+}
+
+section.module.parallax::after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 8;
+    background: -moz-linear-gradient(to bottom, rgaba(0, 0, 0, 0) 0, rgab(0, 0, 0, 0) 40%, #000 100%);
+    background: -webkit-linear-gradient(to bottom, rgaba(0, 0, 0, 0) 0, rgab(0, 0, 0, 0) 40%, #000 100%);
+    background: linear-gradient(to bottom, rgaba(0, 0, 0, 0) 0, rgab(0, 0, 0, 0) 40%, #000 100%);
+}
+
+section.module.parallax1 {
+    background-image: url(img/familia.avif);
+}
+
+section.module.parallax2 {
+    background-image: url(img/medica.png);
+}
+
+section.module.parallax3 {
+    background-image: url(img/doacao.jpg);
+}
+
+section.module.parallax4 {
+    background-image: url(img/educacao.avif);
+}
+
+section.module.parallax h1 {
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+    text-shadow: 5px 5px #000;
+}
+
+footer {
+    
+    background-color: rgb(1, 61, 71); ;
+    color: rgb(255, 255, 255);
+    text-align: right;
+    
+}
+
+.cargo {
+    color: #fff;
+    text-align: center;
+    font-size: 78px;
+    z-index: 50;
+    text-transform: uppercase;
+    text-shadow: 5px 5px #000;
+}
+
+.btn {
+    display: inline-block;
+    background: rgba(2, 88, 146, 0.582);
+    color: rgb(255, 255, 25);
+    padding: 0.8rem 1.8rem;
+    margin-top: 2rem;
+    cursor: pointer; 
+    text-decoration: none;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}

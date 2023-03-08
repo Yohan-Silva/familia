@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Setor de Doações</title>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="style
+    sheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+</head>
+
+<body>
+    <header class="main-header">
+        <h1>Equipe de Doações</h1>
+        <p>Equipe responsavel pelas doações para familias carentes</p>
+    </header>
+
+    <main class="container">
+
+
+        <section class="card">
+            <img src="img/Bryan.jpg" alt="">
+
+            <div>
+                <h3>Bryan Reichert</h3>
+                <p>Chefe da Equipe de Doações, responsavel por supervisionar as equipes de doações.
+
+                    Trabalha na ong desde 2015.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="card" data-aos="fade-left">
+            <img src="img/marco.jpeg" alt="">
+            <div>
+                <h3>Marco Aurelio Reichert</h3>
+                <p> Responsavel por supervisionar as doações de roupas e alimentos.
+
+                    Tranbalha na ong desde 2016.
+                </p>
+
+
+            </div>
+
+        </section>
+
+        <section class="card" data-aos="fade-left">
+            <img src="img/Vera.jpg" alt="">
+            <div>
+                <h3>Vera Reichert</h3>
+                <p>Responsavel por supervisionar as doações de Materiais escolares.
+
+                    trabalha na ong desde 2016.
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="card" data-aos="fade-left">
+            <img src="img/Gabriel.jpg" alt="">
+            <div>
+                <h3>Gabriel Machado</h3>
+                <p>Responsavel por supervisionar as doações de elétro domesticos.
+
+                    Trabalha na ong desde 2015.
+                </p>
+
+            </div>
+
+        </section>
+
+        <article>
+            <h1>Faça sua Doação</h1>
+            <form action="GET">
+
+                <fieldset>
+                    <legend>
+                        Identificação:
+                    </legend>
+
+                    <label for="cNome"> Nome </label> <br>
+                    <input type="text" size="50" id="cNome" required> <br>
+
+                    <label for="cBairro"> Bairro </label> <br>
+                    <input type="text" size="50" id="cBairro" required> <br>
+
+                    <label for="cBairro"> E-mail </label> <br>
+                    <input type="text" size="50" id="cBairro" required> <br>
+
+                </fieldset>
+
+                <br>
+
+
+                <br>
+
+                <fieldset>
+                    <label for="uUND">Unidade na qual voçê vai fazer a doação</label>
+                    <input list="unidade" name="und" id="uUND" required placeholder="Unidade">
+
+                    <datalist id="unidade">
+
+                        <option value="Lomba do Pinheiro"></option>
+                        <option value="Restinga"></option>
+                        <option value="Bom Jesus"></option>
+                        <option value="Cruzeiro"></option>
+                        <option value="Cefer"></option>
+
+                    </datalist>
+
+                    <br>
+
+                    <fieldset>
+                        <label for="udoa">O que voçê vai doar</label>
+                        <input list="doacao" name="doa" id="udoa" required placeholder="Doação">
+                        <datalist id="doacao">
+                            <option value="Alimentos"></option>
+                            <option value="Roupas"></option>
+                            <option value="Material Escolar"></option>
+                            <option value="Elétro domesticos"></option>
+
+                        </datalist>
+                        <br><br>
+
+
+                        <br><br>
+
+
+                        <p>Deixe o seu comentario </p>
+
+                        <textarea name="Menssagem" id="*" cols="70" rows="8"
+                            placeholder="Deixe aqui uma Menssagem."></textarea>
+
+                        <br><br>
+
+                        <input type="checkbox" id="termo" name="termo" required value="contrato">
+                        <label for="termo">Concordo com os termos do contrato</label> <br> <br>
+
+                        <input type="checkbox" id="receber" name="receber" value="not">
+                        <label for="not">Gostaria de receber notificações de campanhas de doações futuras? (não
+                            obrigatório)</label> <br> <br>
+
+                        <input type="submit" name="" id="" value="Faça sua Doação">
+
+                    </fieldset>
+
+            </form>
+
+        </article>
+
+        <a href="index.html" class="btn"> <- Pagina Inicial</a>
+
+                <script>
+                    AOS.init();
+                </script>
+
+                <footer>
+                    <p> Pagina feita por Bryan Reichert - IOS&copy; Prgramação Web 2023 </p>
+                </footer>
+
+</body>
+
+</html>
